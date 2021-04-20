@@ -40,18 +40,23 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#running-unit-tests">Running unit tests</a></li>
+    <li><a href="#running-end-to-end-tests">Running end to end tests</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
+
+## About The Project
+
+A fun project.
 
 ### Built With
 
 * [Angular](https://angular.io/)
-* [JQuery](https://graphql.org/)
-* [Laravel](https://docs.amplify.aws/)
+* [Graphql](https://graphql.org/)
+* [AWS Amplify](https://docs.amplify.aws/)
 
 ## Getting Started
 
@@ -64,6 +69,16 @@ This is an example of how to list things you need to use the software and how to
   ```sh
   npm install npm@latest -g
   ```
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/borzuyehr/movie-app.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
 * Please make you you have the following packages installed:
   ```
     {
@@ -119,26 +134,32 @@ This is an example of how to list things you need to use the software and how to
     }
   ```
 
-## Development server
+## Usage
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Roadmap
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Running end to end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Contributing
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+
+Peter Rahmanifar - [@PeterRahmanifar](https://twitter.com/peterrahmanifar) - email
+
+Project Link: [https://github.com/borzuyehr/movie-app.git](https://github.com/borzuyehr/movie-app.git)
