@@ -1,0 +1,41 @@
+input CreateMovieInput {
+  id: String!
+  Title: String!
+  Image: String!
+  Rating: String!
+}
+
+type Movie {
+  id: String!
+  Title: String!
+  Image: String!
+  Rating: String!
+}
+
+input UpdateMovieInput {
+  id: String!
+  Title: String
+  Image: String
+  Rating: String
+}
+
+type Mutation {
+  deleteMovie(id: String!): Movie
+  createMovie(createMovieInput: CreateMovieInput!): Movie
+  updateMovie(updateMovieInput: UpdateMovieInput!): Movie
+}
+
+type Query {
+  getMovie(id: String!): Movie
+  listMovies: [Movie]
+}
+
+type Subscription {
+  onCreateMovie: Movie @aws_subscribe(mutations: ["createMovie"])
+}
+
+schema {
+  query: Query
+  mutation: Mutation
+  subscription: Subscription
+}

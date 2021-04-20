@@ -1,0 +1,38 @@
+<div class="container">
+    <mat-card *ngFor="let item of movies; let i = index" [ngClass]="{expanded: expanded[i]}" [class.mat-elevation-z8]="expanded[i]">
+        
+      <div class="header">
+            <picture>
+                <source media='(min-width:0px)' srcset="https://material.angular.io/assets/img/examples/shiba2.jpg">
+                <img mat-card-image src="" alt="Photo of a Shiba Inu">
+              </picture>       
+      </div>
+      <mat-card-content>
+        <section>
+            <div class="example-label">Basic</div>
+            <div class="example-button-row">
+            </div>
+          </section>
+          <mat-divider></mat-divider>
+          <button mat-stroked-button>
+            <p>{{item.Title}}</p>
+          </button>
+          
+          <button mat-stroked-button>
+            <p>{{item.Rating}}</p>
+          </button>
+          
+          <div class="toggle">
+          <button mat-icon-button>
+            <mat-icon *ngIf="!expanded[i]" (click)="expanded[i]=!expanded[i]">edit</mat-icon>
+            <mat-icon *ngIf="expanded[i]" (click)="expanded[i]=!expanded[i]">cancel</mat-icon>
+          </button>
+          </div>
+      </mat-card-content>
+      <div class="body" *ngIf="expanded[i]">
+        <div class="vertical" *ngFor="let sub of item.subscriptions">
+          <div class="title">{{sub.type}}</div>
+        </div>
+      </div>
+    </mat-card>
+  </div>

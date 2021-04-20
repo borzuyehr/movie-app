@@ -1,0 +1,57 @@
+.container {
+    width: 1024px;
+    height: 100vh;
+    /* margin-top: 50px; */
+    margin: auto;
+  }
+  
+  mat-card {
+    height: 200px;
+    transition: all 0.5s;
+    overflow: hidden
+  }
+  
+  .right {
+    align-items: flex-end;
+  }
+  
+  div.toggle, div.deleteSave {
+    text-align: right;
+    align-self: center;
+  }
+  
+  div.body {
+    display: grid;
+    grid-template-columns: 4fr 4fr 1fr;
+    grid-column-gap: 10px;
+  }
+  
+  div.vertical {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  div.title {
+    font-weight: bold;
+    font-size: x-large;
+  }
+  
+  div.container {
+    margin-bottom: 12px;
+  }
+  
+  div.header {
+    display: grid;
+    grid-template-columns: 3fr 6fr 1fr;
+    grid-column-gap: 10px;
+  }
+  
+  img {
+      height: 100px;
+      width: auto;
+  }
+  
+  mat-card.expanded {
+    height: 300px;
+    margin: 20px 0 20px 0;
+  }

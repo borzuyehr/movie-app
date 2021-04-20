@@ -1,0 +1,17 @@
+# this is an auto generated file. This will be overwritten
+query GetMovie($id: String!) {
+  getMovie(id: $id) {
+    id
+    Title
+    Image
+    Rating
+  }
+}
+query ListMovies {
+  listMovies {
+    id
+    Title
+    Image
+    Rating
+  }
+}
