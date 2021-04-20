@@ -160,6 +160,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Peter Rahmanifar - [@PeterRahmanifar](https://twitter.com/peterrahmanifar) - email
+Peter Rahmanifar - [@PeterRahmanifar](https://twitter.com/peterrahmanifar)
 
 Project Link: [https://github.com/borzuyehr/movie-app.git](https://github.com/borzuyehr/movie-app.git)
